@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeef;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to left, #04103c, #2b315e, #4f5682, #747da7);
+    color: white;
+    padding: 10px 0;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+}
+
+.search-history {
+    max-width: 300px;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.search-history h2 {
+    margin-top: 0;
+}
+
+#city-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to left, #04103c, #2b315e, #4f5682, #747da7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #2e2e7b;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list li {
+    padding: 10px;
+    background-color: #c5c5c5;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.weather-info {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#current-weather {
+    background-color: #c5c5c5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#forecast-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast-card {
+    background-image: linear-gradient(to left top, #04103c, #2b315e, #4f5682, #747da7, #fefeff);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin: 0 3px;
+}
+
+.forecast-card p {
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    #forecast-cards {
+        flex-direction: column;
+    }
+
+    .forecast-card {
+        margin-bottom: 10px;
+    }
+}
